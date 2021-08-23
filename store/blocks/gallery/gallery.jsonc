@@ -1,0 +1,47 @@
+{
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 1
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#home"
+    }
+  },
+  "product-summary.shelf#home": {
+    "props": {},
+    "children": [
+      "product-summary-name",
+      "product-summary-description",
+      "product-images",
+      // "vtex.product-highlights@2.x:product-highlights",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "add-to-cart-button#go-to-product"
+    ]
+  },
+  "vtex.product-highlights@2.x:product-highlights": {
+    "children": [
+      "product-highlight-text"
+    ]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+  "add-to-cart-button#go-to-product": {
+    "props": {
+      "text": "VER DETALHES",
+      "onClickBehavior": "go-to-product-page"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "slider-layout#custom-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "carousel#home"
+    ]
+  },
+  "carousel#home": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "assets/banner-woods.png"
+        },
+        {
+          "image": "assets/banner-guerreiros.png"
+        }
+      ],
+      "height": "20rem",
+      "width": "57rem",
+      "showArrows": true,
+      "showDots": true
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.container{
+  background: #212121;
+}
+
+.wrapper--sticky-header{
+  transition: background 0.3s ease;
+  will-change: padding, background;
+}

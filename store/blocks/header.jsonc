@@ -22,7 +22,7 @@
     },
     "children": [
       "flex-layout.row#desktop",
-      "tab-layout#desktop"
+      "vtex.menu@2.x:menu#category-menu-header"
     ]
   },
   "flex-layout.row#desktop": {
@@ -58,114 +58,79 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "url": "assets/logo.png",
       "width": "80"
     }
   },
-  "tab-layout#desktop": {
-    "children": [
-      "tab-list#desktop",
-      "tab-content#desktop"
-    ],
+  "vtex.menu@2.x:menu#category-menu-header": {
     "props": {
-      "blockClass": "tab-layout",
-      "defaultActiveTabId": "home1"
-    }
-  },
-  "tab-list#desktop": {
-    "children": [
-      "tab-list.item#vodka",
-      "tab-list.item#whisky",
-      "tab-list.item#tequila",
-      "tab-list.item#rum",
-      "tab-list.item#cognac",
-      "tab-list.item#licores"
-    ],
-    "props": {
-      "blockClass": "tab-list"
-    }
-  },
-  "tab-list.item#vodka": {
-    "props": {
-      "tabId": "vodka",
-      "label": "Vodka",
-      "defaultActiveTab": true
-    }
-  },
-  "tab-list.item#whisky": {
-    "props": {
-      "tabId": "whisky",
-      "label": "Whisky"
-    }
-  },
-  "tab-list.item#tequila": {
-    "props": {
-      "tabId": "tequila",
-      "label": "Tequila"
-    }
-  },
-  "tab-list.item#rum": {
-    "props": {
-      "tabId": "rum",
-      "label": "Rum"
-    }
-  },
-  "tab-list.item#cognac": {
-    "props": {
-      "tabId": "cognac",
-      "label": "Cognac"
-    }
-  },
-  "tab-list.item#licores": {
-    "props": {
-      "tabId": "licores",
-      "label": "Licores"
-    }
-  },
-  "tab-content#desktop": {
-    "children": [
-      "tab-content.item#vodka",
-      "tab-content.item#whisky",
-      "tab-content.item#tequila",
-      "tab-content.item#rum",
-      "tab-content.item#cognac",
-      "tab-content.item#licores"
-    ]
-  },
-  "tab-content.item#vodka": {
-    "children": [],
-    "props": {
-      "tabId": "vodka"
-    }
-  },
-  "tab-content.item#whisky": {
-    "children": [],
-    "props": {
-      "tabId": "whisky"
-    }
-  },
-  "tab-content.item#tequila": {
-    "children": [],
-    "props": {
-      "tabId": "tequila"
-    }
-  },
-  "tab-content.item#rum": {
-    "children": [],
-    "props": {
-      "tabId": "rum"
-    }
-  },
-  "tab-content.item#cognac": {
-    "children": [],
-    "props": {
-      "tabId": "cognac"
-    }
-  },
-  "tab-content.item#licores": {
-    "children": [],
-    "props": {
-      "tabId": "licores"
+      "items": [
+        {
+          "id": "menu-item-category-corinthians",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/corinthians",
+            "noFollow": true,
+            "tagTitle": "Corinthians",
+            "text": "CORINTHIANS"
+          }
+        },
+        {
+          "id": "menu-item-category-palmeiras",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/palmeiras",
+            "noFollow": true,
+            "tagTitle": "Palmeiras",
+            "text": "PALMEIRAS"
+          }
+        },
+        {
+          "id": "menu-item-category-signos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/signos",
+            "noFollow": true,
+            "tagTitle": "Signos",
+            "text": "SIGNOS"
+          }
+        },
+        {
+          "id": "menu-item-category-divertidos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/divertidos",
+            "noFollow": true,
+            "tagTitle": "Divertidos",
+            "text": "DIVERTIDOS"
+          }
+        },
+        {
+          "id": "menu-item-category-guerreiros",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/guerreiros",
+            "noFollow": true,
+            "tagTitle": "Guerreiros",
+            "text": "GUERREIROS"
+          }
+        }
+      ]
     }
   },
   "header-layout.mobile": {
@@ -176,19 +141,19 @@
   "sticky-layout#mobile": {
     "children": [
       "flex-layout.row#mobile",
-      "tab-layout#desktop"
-    ]
+      "vtex.menu@2.x:menu#category-menu-header"
+    ],
+    "props": {
+      "blockClass": "sticky-header"
+    }
   },
   "flex-layout.row#mobile": {
     "children": [
-      "drawer",
-      "logo",
+      "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true

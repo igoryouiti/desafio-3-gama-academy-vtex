@@ -1,0 +1,8 @@
+.menuContainer{
+  justify-content: space-around;
+}
+
+.styledLinkContent{
+  color: #fff;
+  font-weight: 500;
+}

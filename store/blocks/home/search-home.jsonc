@@ -1,0 +1,18 @@
+{
+  "search-result-layout.customQuery#home": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile"
+    ],
+    "props": {
+      "gallery": "grid",
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavaibleItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "Kit UpMedal",
+        "mapField": "ft"
+      }
+    }
+  }
+}

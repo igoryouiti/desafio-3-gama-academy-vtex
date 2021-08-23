@@ -1,4 +1,5 @@
 {
+  // exibição dos produtos
   "store.product": {
     "blocks": [
       "flex-layout.row#main"

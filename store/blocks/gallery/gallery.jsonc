@@ -1,4 +1,5 @@
 {
+  // Criação de uma gallery para mostrar os itens em 2 colunas para desktop e 1 para as demais visualizações
   "gallery": {
     "props": {
       "layouts": [
@@ -22,21 +23,10 @@
       "product-summary-name",
       "product-summary-description",
       "product-images",
-      // "vtex.product-highlights@2.x:product-highlights",
       "product-summary-price",
       "product-summary-sku-selector",
       "add-to-cart-button#go-to-product"
     ]
-  },
-  "vtex.product-highlights@2.x:product-highlights": {
-    "children": [
-      "product-highlight-text"
-    ]
-  },
-  "product-highlight-text": {
-    "props": {
-      "message": "{highlightName}"
-    }
   },
   "add-to-cart-button#go-to-product": {
     "props": {

@@ -16,6 +16,7 @@
       "sticky-layout#desktop"
     ]
   },
+  // para a header ficar fixa no topo da página
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
@@ -62,6 +63,7 @@
       "width": "80"
     }
   },
+  // menu da header que ao ser clicada, ela redireciona para uma página especifica
   "vtex.menu@2.x:menu#category-menu-header": {
     "props": {
       "items": [

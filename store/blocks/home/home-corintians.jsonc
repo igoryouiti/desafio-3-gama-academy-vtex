@@ -1,0 +1,10 @@
+{
+  // página com produtos específicos, e ela também é um template para criação de novas páginas. 
+  // o termo de procura e criação é realizada no admin
+  "store.custom#corinthians": {
+    "blocks": [
+      "slider-layout#custom-home",
+      "search-result-layout.customQuery#home"
+    ]
+  }
+}

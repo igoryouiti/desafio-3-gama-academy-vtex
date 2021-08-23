@@ -1,4 +1,5 @@
 {
+  // carousel das páginas principais
   "slider-layout#custom-home": {
     "props": {
       "itemsPerPage": {

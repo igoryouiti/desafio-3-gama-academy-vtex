@@ -1,4 +1,5 @@
 {
+  // custom query para realizar procuras específicas, e podem ser trocadas no CMS do admin
   "search-result-layout.customQuery#home": {
     "blocks": [
       "search-result-layout.desktop",

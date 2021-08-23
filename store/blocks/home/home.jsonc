@@ -1,4 +1,5 @@
 {
+  // página home
   "store.home": {
     "blocks": [
       "slider-layout#custom-home",

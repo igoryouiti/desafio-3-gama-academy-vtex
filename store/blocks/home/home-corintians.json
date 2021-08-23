@@ -1,8 +1,0 @@
-{
-  "store.custom#corinthians": {
-    "blocks": [
-      "slider-layout#custom-home",
-      "search-result-layout.customQuery#home"
-    ]
-  }
-}
